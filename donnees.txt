@@ -1,0 +1,12 @@
+"film extrat",
+"un chef d oeuvre",
+"un banger",
+"super film",
+"tres bon film",
+"film horrible",
+"pire film du monde",
+"je n'aime pas",
+"c'est vraiment mauvais",
+"c'est detestable",
+"pire que ca tu meurt",
+"un vrai déchet"

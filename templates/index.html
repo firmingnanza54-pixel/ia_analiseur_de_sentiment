@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😀🙁 IA de détection de sentiment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Analyseur de Sentiment</h2>
+
+        <p class="description">
+            Bienvenue ! Saisissez votre commentaire ci-dessous : notre réseau de neurones 
+            va l'analyser en temps réel pour déterminer s'il traduit une opinion 
+            <strong>positive</strong> ou <strong>négative</strong>, tout en vous affichant son indice de certitude.
+        </p>
+        <p class="subtitle">Écrivez votre commentaire puis appuyez sur le bouton prédire.</p>
+
+        <div class="input-group">
+            <label for="zone_de_saisie">Saisissez votre commentaire :</label>
+            <textarea id="zone_de_saisie" rows="3" placeholder="Exemple : Ce film est vraiment génial !"></textarea>
+        </div>
+
+        <div id="bouttons">
+            <button id="predire" class="btn-primary" onclick="prediction()">Prédire</button>
+            <button id="bouton_effacer" class="btn-secondary" onclick="Effacer()">Effacer</button>
+        </div>
+
+        <div id="reponse"></div>
+
+        <div id="verdicte" style="margin-top: 20px;">
+            <p class="subtitle">Veuillez donner votre verdict (L'IA a-t-elle raison ?) :</p>
+            <label>
+                <input type="radio" class="correction" name="verdict" value="1" checked> Oui
+            </label>
+            <label style="margin-left: 15px;">
+                <input type="radio" class="correction" name="verdict" value="0"> Non
+            </label>
+            <br><br>
+            <button class="btn-primary" onclick="envoyer()">Envoyer le retour</button>
+            <div id="envoi" style="margin-top: 10px;"></div>
+        </div>
+    </div>
+
+    
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
