@@ -17,14 +17,7 @@ recu = [item['cible'] for item in res.data]
 
 print(f"{len(phrase)} phrases récupérées depuis le cloud pour le réentraînement !")
 
-with open ("/home/gnanza/projet_ia/pojet_ia_comm/donnees.txt", 'r') as f:
-    phrase= f.readlines()
-
-
-with open ("/home/gnanza/projet_ia/pojet_ia_comm/cible.txt" , 'r') as f:
-    recu = f.readlines()
-
-label = [int(je.strip()) for je in recu]
+label = [int(je) for je in recu]
 
 
 def cree_vocabulaire(phrase):
@@ -176,7 +169,7 @@ if __name__ == "__main__":
 
     cerveau = XOR.sauvegade(vocab)
 
-    with open ('/home/gnanza/projet_ia/prosauvegarde_cerveau2.json', "w") as f:
+    with open ('prosauvegarde_cerveau2.json', "w") as f:
         json.dump(cerveau , f, indent = 4)
 
     
