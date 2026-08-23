@@ -14,7 +14,7 @@ supabase_url = 'https://qkfpshnuzbfqwdlcxfru.supabase.co'
 supabase_key = 'sb_publishable_JPicoM76nsqg0mQDMa_CDA_O6u3h-Sg'
 supabase: Client = create_client(supabase_url, supabase_key)
 
-with open("/home/gnanza/projet_ia/pojet_ia_comm/prosauvegarde_cerveau2.json", "r") as f:
+with open("prosauvegarde_cerveau2.json", "r") as f:
     cerveau = json.load(f)
 
 ia.charger(cerveau)
