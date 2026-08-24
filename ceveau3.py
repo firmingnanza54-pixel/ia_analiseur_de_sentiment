@@ -148,7 +148,7 @@ class Reseau_de_neuronne:
 
                 self.backward(pred, cible, lr, x)
    
-            if epoque % 100000 == 0:
+            if epoque % 5000 == 0:
                 erreur_moyenne = erreur_totale / len(x_train)
                 print(f"Époque {epoque} - Erreur moyenne : {erreur_moyenne:.4f}")
 if __name__ == "__main__":
@@ -157,7 +157,7 @@ if __name__ == "__main__":
 
     print("------- DEBUT DE L'ENRAINEMENT---------")
 
-    XOR.train(epoques= 600001, lr= 0.5, x_train=x_train, y_train=y_train)
+    XOR.train(epoques= 30000, lr= 0.5, x_train=x_train, y_train=y_train)
 
     print("\n--- Résultats après entraînement ---")
     for i in range(len(x_train)):
