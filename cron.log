@@ -46,3 +46,10 @@ Entrée [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0,
 Entrée [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] -> Prédiction : 0.0011 (Attendu : 0)
 Entrée [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] -> Prédiction : 0.9978 (Attendu : 1)
 Entrée [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0] -> Prédiction : 0.0018 (Attendu : 0)
+[main bf78c3e] Auto push version 12
+ 3 files changed, 935 insertions(+), 876 deletions(-)
+ rewrite prosauvegarde_cerveau2.json (87%)
+[0;36m📦 Envoi de la version 12 sur GitHub... 🚀[0m
+To github.com:firmingnanza54-pixel/ia_analiseur_de_sentiment
+   5c4bf3e..bf78c3e  main -> main
+[0;32m✅ Mise à jour n° 12 réussie avec succès ! 🎉[0m
